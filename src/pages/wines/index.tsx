@@ -1,12 +1,11 @@
 import type { NextPage } from "next";
 
-const wine: NextPage =() => {
+const index: NextPage =() => {
     return (
         <div>
-            Wine 
+            index 
         </div>
-        
     )
 }
-export default wine;
+export default index;
 
