@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import { Error, Loading, BeerCard } from '../../components';
 import { useBeerData } from '../../hooks/useBeerData';
-import { Beer } from '../../types/Beer';
+import { Beers } from '../../types/Beer';
 
 const StoutsPage: NextPage = () => {
     const name = 'stouts';
@@ -12,7 +12,7 @@ const StoutsPage: NextPage = () => {
       <div>
         <h1>Stouts</h1>
         <main>
-          {data.map((beerData: Beer) => {
+          {data.map((beerData: Beers) => {
             return (
               <div key={`stouts-wine-list-${beerData.id}`}>
                 <h1>{beerData.name}</h1>

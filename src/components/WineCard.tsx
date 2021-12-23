@@ -1,4 +1,7 @@
 import { Wine } from "../types/Wine";
+interface WineProps {
+    wineData: Wine
+}
 export const WineCard = ({ wineData }: WineProps) => {
   const { wine, winery } = wineData;
 
