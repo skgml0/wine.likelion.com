@@ -1,11 +1,29 @@
 import type { NextPage } from "next";
+import axios from 'axios';
+import useSWR from "swr";
+import {Wine} from "../../types/Wine";
+import { useWineData } from "../../hooks/useWineData";
 
-const sparkling: NextPage =() => {
+const SparklingPage: NextPage = () => {
+    const name = 'sparkling';
+    const {data,error} = useWineData(name);
+    if (error) return <div>Failed to Loading...</div>;
+    if (!data) return <div>...Loading</div>;    
     return (
-        <div>
-            sparkling 
-        </div>
-    )
-}
-export default sparkling;
+      <div>
+        <h1>Sparkling Page</h1>
+        <main>
+          {data.map((wineData: Wine) => {
+            return (
+              <div key={`sparkling-wine-list-${wineData.id}`}>
+                <h1>{wineData.wine}</h1>
+                <p>{wineData.winery}</p>
+              </div>
+            );
+          })}
+        </main>
+      </div>
+    );
+  };
 
+export default SparklingPage;
