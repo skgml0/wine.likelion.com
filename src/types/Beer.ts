@@ -1,10 +1,10 @@
 export interface Beers {
-    price: string,
-    name: string,
+    price: string;
+    name: string;
     rating: {
-        average: string,
-        reviews: string
-        },
-    image: string,
-    id: number
-    } 
+        average: number;
+        reviews: number;
+        };
+    image: string;
+    id: number;
+} 

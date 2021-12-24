@@ -3,7 +3,7 @@ export interface Wine {
     wine: string,
     rating: {
       average: string,
-      reviews: string
+      reviews: string,
     },
     location: string,
     image: string,
