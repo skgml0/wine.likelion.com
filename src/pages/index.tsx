@@ -22,10 +22,7 @@ const Home: NextPage = () => {
         </p>
 
         <div className={styles.grid}>
-          <a
-            href="https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/wine"
-            className={styles.card}
-          >
+          <a href="https://en.wikipedia.org/wiki/Wine" className={styles.card}>
             <h2>Wine &rarr;</h2>
             <p>
               Wine is an alcoholic drink typically made from fermented grapes.
@@ -34,7 +31,7 @@ const Home: NextPage = () => {
             </p>
           </a>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
+          <a href="https://en.wikipedia.org/wiki/Beer" className={styles.card}>
             <h2>Beer &rarr;</h2>
             <p>
               Beer is one of the oldest and most widely consumed alcoholic
