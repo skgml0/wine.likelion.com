@@ -39,8 +39,8 @@ const Home: NextPage = () => {
             <p>
               Beer is one of the oldest and most widely consumed alcoholic
               drinks in the world, and the third most popular drink overall
-              after water and tea. It's very delicious!            
-              </p>
+              after water and tea. It is very delicious!
+            </p>
           </a>
 
           {/* <a
