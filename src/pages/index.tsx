@@ -1,7 +1,7 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import type { NextPage } from "next";
+import Head from "next/head";
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
   return (
@@ -13,43 +13,43 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">dringk world!</a>
-        </h1>
+        <h1 className={styles.title}>Wine and Beers</h1>
 
         <p className={styles.description}>
-          
-          <code className={styles.code}>first : click the youre favorite things [wine / beer]</code>
+          <code className={styles.code}>
+            click the youre favorite things [wine / beer]
+          </code>
         </p>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
+          <a
+            href="https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/wine"
+            className={styles.card}
+          >
+            <h2>Wine &rarr;</h2>
+            <p>
+              Wine is an alcoholic drink typically made from fermented grapes.
+              Yeast consumes the sugar in the grapes and converts it to ethanol
+              and carbon dioxide.
+            </p>
           </a>
 
           <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+            <h2>Beer &rarr;</h2>
+            <p>
+              Beer is one of the oldest and most widely consumed alcoholic
+              drinks in the world, and the third most popular drink overall
+              after water and tea. It's very delicious!            
+              </p>
           </a>
 
-          <a
+          {/* <a
             href="https://github.com/vercel/next.js/tree/master/examples"
             className={styles.card}
           >
             <h2>Examples &rarr;</h2>
             <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+          </a> */}
         </div>
       </main>
 
@@ -59,14 +59,14 @@ const Home: NextPage = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Powered by{" "}
           <span className={styles.logo}>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
         </a>
       </footer>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
